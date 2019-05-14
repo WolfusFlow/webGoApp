@@ -7,15 +7,12 @@ import (
 	"os/signal"
 	"syscall"
 
-<<<<<<< HEAD
 	db "../db"
 	model "../model"
 	ui "../ui"
-=======
-	_ "../db"
-	_ "../model"
-	_ "../ui"
->>>>>>> master
+	// _ "../db"
+	// _ "../model"
+	// _ "../ui"
 	// "github.com/WolfusFlow/webGoApp/db"
 	// "github.com/WolfusFlow/webGoApp/model"
 	// "github.com/WolfusFlow/webGoApp/ui"

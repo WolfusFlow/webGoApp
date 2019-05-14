@@ -13,8 +13,8 @@ type Config struct {
 }
 
 func InitDb(cfg Config) (*pgDb, error) {
-	connString := "user=postgres password=postgres dbname=godb sslmode=disable"
-	if dbConn, err := sqlx.Connect("postgres", connString); err != nil { //cfg.ConnectString
+	// connString := "user=postgres password=postgres dbname=godb sslmode=disable"
+	if dbConn, err := sqlx.Connect("postgres", cfg.ConnectString); err != nil { //cfg.ConnectString
 		return nil, err
 	} else {
 		p := &pgDb{dbConn: dbConn}
